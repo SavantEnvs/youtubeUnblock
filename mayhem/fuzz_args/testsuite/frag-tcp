@@ -1,0 +1,5 @@
+--sni-domains=youtube.com,googlevideo.com
+--frag=tcp
+--frag-sni-reverse=1
+--frag-middle-sni=1
+--seg2delay=5

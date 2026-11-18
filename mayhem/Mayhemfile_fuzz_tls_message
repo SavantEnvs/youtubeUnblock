@@ -1,0 +1,9 @@
+project: savantenvs/youtubeUnblock
+target: fuzz_tls_message
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tls_message/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tls_message
+    libfuzzer: true
+    timeout: 10

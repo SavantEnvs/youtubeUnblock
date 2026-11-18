@@ -1,0 +1,7 @@
+--udp-mode=fake
+--udp-fake-seq-len=3
+--udp-fake-len=64
+--udp-faking-strategy=checksum
+--udp-dport-filter=443,3478-3480
+--udp-filter-quic=parse
+--udp-stun-filter

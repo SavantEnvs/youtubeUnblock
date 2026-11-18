@@ -1,0 +1,6 @@
+--fake-sni=1
+--fake-sni-type=custom
+--fake-custom-payload=16030100040100000a
+--faking-strategy=ttl,tcp_check,md5sum
+--faking-ttl=3
+--fake-sni-seq-len=2

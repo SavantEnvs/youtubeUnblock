@@ -1,0 +1,9 @@
+project: savantenvs/youtubeUnblock
+target: fuzz_quic_frames
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_quic_frames/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_quic_frames
+    libfuzzer: true
+    timeout: 10

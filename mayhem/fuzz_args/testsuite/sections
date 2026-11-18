@@ -1,0 +1,14 @@
+--trace
+--fbegin
+--sni-domains=all
+--tcp-dport-filter=443
+--frag=ip
+--fend
+--fbegin
+--udp-filter-quic=all
+--quic-drop
+--fend
+--threads=2
+--queue-num=537
+--packet-mark=32768
+--no-ipv6

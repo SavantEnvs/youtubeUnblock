@@ -1,0 +1,10 @@
+--silent
+--instaflush
+--syslog
+--connbytes-limit=19
+--use-conntrack
+--no-gso
+--cls
+--tls=disabled
+--sni-detection=brute
+--exclude-domains=music.youtube.com

@@ -1,0 +1,9 @@
+project: savantenvs/youtubeUnblock
+target: fuzz_quic_udp_payload
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_quic_udp_payload/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_quic_udp_payload
+    libfuzzer: true
+    timeout: 10
